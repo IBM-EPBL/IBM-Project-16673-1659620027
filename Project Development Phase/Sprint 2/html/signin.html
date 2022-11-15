@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Retailer Inventory --- SignIn</h1>
+    </nav>
+    <div class="signin_wrapper">
+      <form action="/items.html" class="signin_form">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass" />
+        <div class="actions">
+          <button type="submit">Submit</button>
+          <button type="submit" class="signup">
+            Don't have account? Signup
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script>
+    const goto = (e, gotoPage) => {
+      e.preventDefault();
+      window.location.replace(`${gotoPage}`);
+    };
+    document
+      .querySelector("button")
+      .addEventListener("click",(event) => goto(event, "./items.html"));
+    document
+      .querySelector(".signup")
+      .addEventListener("click",(event) => goto(event,"./signup.html"));
+  </script>
+</html>

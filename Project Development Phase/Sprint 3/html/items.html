@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Inventory</title>
+    <script src="../js/items.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar nav_items">
+      <h1>Retailer Inventory</h1>
+      <p class="indicator">Low Inventory</p>
+    </nav>
+    <section class="addData">
+      <form class="wrapper">
+        <label for="prodName">Product Name</label>
+        <input type="text" id="prodName" />
+        <label for="number">Count</label>
+        <input type="number" id="number" />
+        <button type="submit" class="submitBtn">Add</button>
+      </form>
+    </section>
+
+    <div class="items">
+      <div class="emptyData">
+        <h1>Empty Inventory</h1>
+      </div>
+      <ul class="lists">
+        
+      </ul>
+    </div>
+  </body>
+</html>

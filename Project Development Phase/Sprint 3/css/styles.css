@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* signup.html && signin.html */
+.navbar {
+  background-color: #3d66b6;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.navbar h1 {
+  color: antiquewhite;
+  padding: 1.5rem 0.75rem;
+}
+
+.signup_wrapper,
+.signin_wrapper,
+.addData {
+  margin: 5rem auto 0rem;
+  padding: 1rem;
+  box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  max-width: 35rem;
+}
+
+.signup_form,
+.signin_form,
+.addData > form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+.signup_form > input,
+.signin_form > input,
+.addData form > input {
+  margin-bottom: 0.75rem;
+  padding: 0.25rem;
+  border: 2px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.signup_form > input:focus,
+.signin_form > input:focus,
+.addData form > input:hover {
+  border-color: #3d66b6;
+}
+
+.signup_form > label,
+.signin_form > label,
+.addData form > label {
+  margin-bottom: 0.2rem;
+  color: #3d66b6;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup_form > button,
+.actions > button,
+.addData form > button {
+  border: 2px solid #3d66b6;
+  background: #fff;
+  color: #3d66b6;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 20%;
+  align-content: flex-end;
+  transition: 0.2s;
+}
+
+.signup_form > button:hover,
+.actions > button:hover,
+.addData form > button:hover {
+  color: #fff;
+  background: #3d66b6;
+  border-color: #3d66b6;
+  border-radius: 3px;
+}
+
+.actions > a {
+  color: #3d66b6;
+}
+
+/* items.html */
+
+.addData {
+  margin: 1rem auto 0rem;
+}
+
+.addData form > button {
+  color: limegreen;
+  border-color: limegreen;
+}
+
+.addData form > button:hover {
+  background: limegreen;
+  color: #fff;
+  border-color: limegreen;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.items ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  max-width: 45rem;
+  width: 90%;
+}
+
+.items ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto 0rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 5px, rgba(0, 0, 0, 0.23) 0px 0px 5px;
+  border-radius: 0.5rem;
+  width: 90%;
+  list-style: none;
+}
+
+.emptyData {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto 0rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 5px, rgba(0, 0, 0, 0.23) 0px 0px 5px;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 45rem;
+}
+
+.nav_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_items p {
+  padding: 1.5rem 0.75rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(235, 67, 67);
+  animation: blink 0.2s alternate infinite;
+}
+.add{
+  display: flex;
+}
+
+.remove{
+  display: none;
+}
+
+@keyframes blink {
+  0% {
+    text-shadow: 0px 1px 12px red;
+  }
+  
+  100% {
+    text-shadow: none;
+  }
+}
