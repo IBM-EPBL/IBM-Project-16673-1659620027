@@ -24,7 +24,7 @@ const addElement = (event) => {
   const liTitle = document.createElement("h1");
   liTitle.textContent = prodName.value;
   const liCount = document.createElement("p");
-  liCount.textContent = `Rs.${prodCount.value}`;
+  liCount.textContent = `${prodCount.value}`;
   liEle.append(liTitle, liCount);
   listUl.append(liEle);
 };
